@@ -1,0 +1,62 @@
+{
+    "kyberMine": {
+      "north": "lightsaberRoom",
+      "south": null,
+      "east": null,
+      "west": null,
+      "objects": [
+        {"objID": "kyberCrystal", "interactions": ["TAKE", "LOOK"], "description": "A radiant Kyber crystal."},
+        {"objID": "lamp", "interactions": ["USE", "LOOK"], "description": "An ancient lamp to light the way."},
+        {"objID": "door", "interactions": ["OPEN", "LOOK"], "description": "A sturdy door leading north."}
+      ],
+      "description": "Every jedi's adventure starts here. Finding their own crystal in the caves. It will call to you."
+    },
+    "lightsaberRoom": {
+      "north": "trainingRoom",
+      "south": "kyberMine",
+      "east": null,
+      "west": null,
+      "objects": [
+        {"objID": "workbench", "interactions": ["USE", "LOOK"], "description": "A workbench for constructing lightsabers."},
+        {"objID": "telekenesis", "interactions": ["USE", "LOOK"], "description": "Use the force for lightsaber construction."},
+        {"objID": "manual", "interactions": ["LOOK"], "description": "An instruction manual for lightsaber assembly."}
+      ],
+      "description": "A sacred room for constructing lightsabers. Professor Huyang will be your guide."
+    },
+    "trainingRoom": {
+      "north": "councilRoom",
+      "south": "lightsaberRoom",
+      "east": null,
+      "west": null,
+      "objects": [
+        {"objID": "trainingDroid", "interactions": ["USE", "LOOK"], "description": "A droid for combat practice."},
+        {"objID": "obstacleCourse", "interactions": ["USE", "LOOK"], "description": "A series of challenges for training."},
+        {"objID": "holocron", "interactions": ["USE", "LOOK"], "description": "A device containing lessons from Jedi Masters."}
+      ],
+      "description": "A hall with training droids and obstacles."
+    },
+    "councilRoom": {
+      "north": "meditationRoom",
+      "south": "trainingRoom",
+      "east": null,
+      "west": null,
+      "objects": [
+        {"objID": "councilSeat", "interactions": ["LOOK"], "description": "A seat for the Jedi Council."},
+        {"objID": "holoprojector", "interactions": ["USE", "LOOK"], "description": "A device for distant communication."},
+        {"objID": "jediRobe", "interactions": ["TAKE", "LOOK"], "description": "A robe symbolizing a Jedi Knight."}
+      ],
+      "description": "The Jedi Council's sacred room. The likes of Yoda, Mace Windu, Ki-Adi-Mundi and Plo Koon's presence has graced this room."
+    },
+    "meditationRoom": {
+      "north": null,
+      "south": "councilRoom",
+      "east": null,
+      "west": null,
+      "objects": [
+        {"objID": "meditationMat", "interactions": ["USE", "LOOK"], "description": "A mat for meditation."},
+        {"objID": "incenseBurner", "interactions": ["USE", "LOOK"], "description": "An incense burner for meditation."},
+        {"objID": "forceArtifact", "interactions": ["USE", "LOOK"], "description": "A relic that aids in focusing the Force."}
+      ],
+      "description": "A quiet space for meditation."
+    }
+}  
